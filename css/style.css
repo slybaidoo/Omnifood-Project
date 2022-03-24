@@ -118,7 +118,6 @@
     font-weight: 700;
 }
 
-
 /******************************/
 /* FEATURED IN SECTION */
 /******************************/
@@ -185,7 +184,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .step-img-box::before {
@@ -199,7 +197,6 @@
     padding-bottom: 60%;
     background-color: #fdf2e9;
     z-index: -2;
-
 }
 
 .step-img-box::after {
@@ -212,7 +209,6 @@
 .step-img {
     width: 35%;
 }
-
 
 /******************************/
 /* Meal Section */
@@ -252,7 +248,6 @@
     color: #333;
     font-weight: 600;
     border-radius: 100px;
-
 }
 
 .tag--vegetarian {
@@ -382,7 +377,6 @@
     justify-self: end;
     border: 2px solid #fdf2e9;
     padding: 4.6rem;
-
 }
 
 .pricing-plan--complete {
@@ -406,7 +400,6 @@
     padding: 0.8rem 8rem;
 
     transform: rotate(45deg);
-
 }
 
 .plan-header {
@@ -433,7 +426,7 @@
 .plan-price span {
     font-size: 3rem;
     font-weight: 500;
-    margin-right: .8rem;
+    margin-right: 0.8rem;
 }
 
 .plan-text {
@@ -473,4 +466,53 @@
 .feature-text {
     font-size: 1.8rem;
     line-height: 1.8;
+}
+
+/* ********************************* */
+/* CTA SECTION */
+/* *********************************  */
+.section-cta {
+    padding: 9.6rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    height: 50rem;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+
+.cta .heading-secondary {
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(to right bottom,
+            rgba(235, 151, 78, 0.35),
+            rgba(230, 125, 34, 0.35)),
+        url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
 }
