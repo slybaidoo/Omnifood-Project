@@ -18,6 +18,7 @@ Default: 1
 smaLL:1.05
 Medium: 1.2
 Paragraph default: 1.6
+large : 1.8
 
 Letter-spacing
 -0.5px
@@ -33,8 +34,11 @@ Letter-spacing
 
 - Shades: 
 #cf711f
+#45260a
+
 - Accents: 
 - Greys: 
+
 #888
 #767676 (lightest grey allowed on #fff)
 #6f6f6f (lightest grey allowed on this #fdf2e9)
@@ -74,6 +78,14 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+
+	/* Only works if there is nothing absolutely positioned in relation to body */
+	/* overflow-x: hidden; */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /******************************/
@@ -81,6 +93,7 @@ body {
 /******************************/
 
 .container {
+	/*  1140px */
 	max-width: 120rem;
 	padding: 0 3.2rem;
 	margin: 0 auto;
@@ -140,13 +153,13 @@ body {
 
 .heading-secondary {
 	font-size: 4.4rem;
-	line-height: 1.2rem;
+	line-height: 1.2;
 	margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
 	font-size: 3rem;
-	line-height: 1.2rem;
+	line-height: 1.2;
 	margin-bottom: 3.2rem;
 }
 
@@ -169,6 +182,7 @@ body {
 	text-decoration: none;
 	padding: 1.6rem 3.2rem;
 	border-radius: 9px;
+
 	-webkit-border-radius: 9px;
 	-moz-border-radius: 9px;
 	-ms-border-radius: 9px;
@@ -252,6 +266,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1.6rem;
+	line-height: 2.2;
 }
 
 .list-icon {
